@@ -11,11 +11,6 @@ services:
     ports:
       - "4567:4567"
     restart: on-failure:3
-    deploy:
-      resources:
-        limits:
-          memory: 500MB
-          memory_swap: 1G
   flaresolverr:
     image: ghcr.io/flaresolverr/flaresolverr:latest
     container_name: flaresolverr
